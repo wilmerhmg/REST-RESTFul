@@ -1,0 +1,32 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel ./ --out-dir ./dist --ignore ./dist",
+    "babel-node": "babel-node app.js",
+    "dev": "nodemon --exec npm run babel-node",
+    "start": "babel-node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "axios": "^0.18.0",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "@babel/node": "^7.0.0",
+    "basic-auth": "^2.0.1",
+    "consign": "^0.1.6",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.4.0",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.4",
+    "tedious": "^3.0.1"
+  }
+}
